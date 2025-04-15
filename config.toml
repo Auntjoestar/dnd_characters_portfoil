@@ -21,6 +21,9 @@ favicon = "/img/favicon.ico" # Path to favicon file
 [permalinks]
 posts = "/personajes/:slug/"
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
 
 [markup]
   [markup.goldmark]
