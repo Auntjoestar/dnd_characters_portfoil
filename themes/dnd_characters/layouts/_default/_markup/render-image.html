@@ -1,0 +1,5 @@
+<img src="{{ printf "/dnd_characters_portfoil/%s" .Destination | absURL }}" loading="lazy"
+{{- with .PlainText }} alt="{{ . }}"{{ end -}}
+  {{- with .Title }} title="{{ . }}"{{ end -}}
+>
+{{- /* chomp trailing newline */ -}}
