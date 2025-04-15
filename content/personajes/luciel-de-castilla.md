@@ -1,6 +1,6 @@
 ---
 title: "Luciel de Castilla"
-cover: "img/luciel.webp"
+cover: "/img/luciel.webp"
 date: 2025-04-13T15:55:27-05:00
 draft: false 
 ---
@@ -64,4 +64,4 @@ Su armadura es parecida a las representaciones modernas de Ares, con varios acce
 **Extra:** Perdió el dedo meñique, anular y del medio de la mano derecha en la forja y tiene una prótesis métalica en cada uno.\
 **Abajo se deja una referencia de como podría ser su apariencia*
 
-![Imagen de referencia de Luciel de Castilla](img/luciel.webp)
+![Imagen de referencia de Luciel de Castilla](/img/luciel.webp)
