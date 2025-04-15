@@ -1,6 +1,6 @@
 ---
 title: "Luciel de Castilla"
-cover: "/img/luciel.webp"
+cover: "img/luciel.webp"
 date: 2025-04-13T15:55:27-05:00
 draft: false 
 ---
