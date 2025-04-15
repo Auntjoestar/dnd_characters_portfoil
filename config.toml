@@ -1,7 +1,10 @@
-baseURL = 'https://auntjoestar.github.io/dnd_characters_portfoil/'
+baseURL = 'auntjoestar.github.io/dnd_characters_portfoil/'
 languageCode = 'es-ni'
 title = "Crista's D&D Characters"
 theme = "dnd_characters"
+defaultContentLanguage = "es"
+canonicalURL = "https://auntjoestar.github.io/dnd_characters_portfoil/"
+keywords = ["DnD", "Dungeons", "Dragons", "Calabozos", "Mazmorras", "Tiefling", "Sorcerer", "Characters", "Personajes", "Portfoil", "Portafolios"]
 
 [menu]
   [[menu.main]]
