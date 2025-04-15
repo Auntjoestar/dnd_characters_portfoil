@@ -1,0 +1,30 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = "Crista's D&D Characters"
+theme = "dnd_characters"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Personajes"
+    pre = "personajes"
+    url = "/personajes/"
+    weight = 2
+
+[params]
+favicon = "/img/favicon.ico" # Path to favicon file
+
+[permalinks]
+posts = "/personajes/:slug/"
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true

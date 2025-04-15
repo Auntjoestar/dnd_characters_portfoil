@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg bg-dark mb-2" data-bs-theme="dark">
+  <div class="container-fluid"><i class="fa-solid fa-dice-d20 text-light me-2 fs-3"></i>
+    <a class="navbar-brand" href="/">{{ .Site.Title }}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        {{ $isHome := and (eq .URL "/") $currentPage.IsHome }}
+        {{ if or ($currentPage.IsMenuCurrent .Menu .) $isHome }}
+        <li class="nav-item">
+          <a class="nav-link active" href="{{ .URL }}">
+            {{ $text := print .Name | safeHTML }}
+            {{ $text }}
+          </a>
+        </li>
+        {{ else }}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ .URL }}">
+            {{ $text := print .Name | safeHTML }}
+            {{ $text }}
+          </a>
+        </li>
+        {{ end }}
+        {{ end }}
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Nombre del personaje..." aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
