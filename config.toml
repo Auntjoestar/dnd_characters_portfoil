@@ -16,7 +16,7 @@ theme = "dnd_characters"
     weight = 2
 
 [params]
-favicon = "/img/favicon.ico" # Path to favicon file
+favicon = "img/favicon.ico" # Path to favicon file
 
 [permalinks]
 posts = "/personajes/:slug/"
@@ -27,6 +27,8 @@ posts = "/personajes/:slug/"
 
 [markup]
   [markup.goldmark]
+    [markup.goldmark.renderer]
+        unsafe = true
     [markup.goldmark.parser]
       [markup.goldmark.parser.attribute]
         block = true
