@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://auntjoestar.github.io/dnd_characters_portfoil/'
 languageCode = 'es-ni'
 title = "Crista's D&D Characters"
 theme = "dnd_characters"
